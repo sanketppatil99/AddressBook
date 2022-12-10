@@ -97,5 +97,29 @@ namespace AddressBookSystem
             }
 
         }
+
+        public static void Delete()
+        {
+            Contacts delete = new Contacts();
+            Console.WriteLine("Delete a contact list enter first name : ");
+            string name = Console.ReadLine();
+
+            foreach(var contact in Program.Person)
+            {
+                if(contacts.fName == name)
+                {
+                    delete = contact;
+                }
+                else
+                {
+                    Console.WriteLine("Name does not exists");
+                }
+                Person.Remove(delete);
+                
+            }
+
+           
+
+        }
     }
 }
