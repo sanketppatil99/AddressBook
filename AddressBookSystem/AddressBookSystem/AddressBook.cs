@@ -14,7 +14,7 @@ namespace AddressBookSystem
         public static List<Contacts> Person = new List<Contacts>();
         public static void CreateContacts()
         {
-            //Contacts contacts = new Contacts();
+            
             Console.WriteLine("Enter First Name : ");
             contacts.fName = Console.ReadLine();
 
